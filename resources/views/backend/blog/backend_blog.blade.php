@@ -41,12 +41,13 @@
 @endsection
 
 @section('main')
-    <table style="border:3px solid black">
+    <table style="border:1px solid black">
         <thead>
             <tr>
                 <th>編號</th>
                 <th>標題</th>
                 <th>內容</th>
+                <th>圖片</th>
                 <th>刪改</th>
             </tr>
         </thead>
@@ -56,6 +57,7 @@
                     <td>{{ $key+1 }}</td>
                     <td>{{ $item->title }}</td>
                     <td>{!! $item->content !!}</td>
+                    <td>{{ $item->pic_path }}</td>
                     <td>
                         <a href="/admin/blog/edit/{{ $item->id }}"
                             class="edit-btn font-bold py-2 px-4 border rounded">編輯</a>

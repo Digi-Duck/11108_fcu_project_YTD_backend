@@ -41,7 +41,7 @@
 @endsection
 
 @section('main')
-    <table style="border:3px solid black">
+    <table style="border:1px solid black">
         <thead>
             <tr>
                 <th>編號</th>

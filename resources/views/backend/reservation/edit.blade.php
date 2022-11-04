@@ -43,7 +43,7 @@
 @section('main')
     <form action="/admin/reservation/update/{{$reservation->id}}" method="POST">
         @csrf
-        <table style="border:3px solid black">
+        <table style="border:1px solid black ">
             <thead>
                 <tr>
                     <th>姓名</th>

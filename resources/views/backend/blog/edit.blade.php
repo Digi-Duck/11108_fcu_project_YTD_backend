@@ -51,7 +51,7 @@
 @section('main')
     <form action="/admin/blog/update/{{ $blog->id }}" method="POST">
         @csrf
-        <table style="border:3px solid black">
+        <table style="border:1px solid black">
             <thead>
                 <tr>
                     <th>標題</th>
