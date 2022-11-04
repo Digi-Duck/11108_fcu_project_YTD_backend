@@ -1,0 +1,57 @@
+@font-face {
+  font-family: didot;
+  src: url(../font-family/Didot_Regular.ttf);
+}
+@font-face {
+  font-family: ryumin;
+  src: url(../font-family/GenRyuMin-M.ttc);
+}
+@font-face {
+  font-family: hind;
+  src: url(../font-family/Hind-Regular.ttf);
+}
+.loading_page {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  overflow: hidden;
+  background-color: #fff;
+}
+.loading_page svg {
+  position: absolute;
+  bottom: 0;
+  width: 66.875vw;
+  transition: 0.5s;
+  transform: translate(-100%, 0);
+}
+@media (max-width: 960px) {
+  .loading_page svg {
+    width: 54.83vw;
+    transform: rotate(90deg);
+    bottom: unset;
+    top: 0;
+    left: -15%;
+    transform: translate(0, -150%);
+  }
+}
+.loading_page p {
+  position: absolute;
+  margin: 0;
+  top: 9.54%;
+  left: 65.1%;
+  font-family: didot;
+  font-size: clamp(92px, 14.0625vw, 270px);
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.768627451);
+  transition: 0.5s;
+  transform: translate(150%, 0);
+}
+@media (max-width: 960px) {
+  .loading_page p {
+    top: 80%;
+    right: 65.1%;
+    transform: translate(0, 150%);
+  }
+}/*# sourceMappingURL=loading.css.map */
