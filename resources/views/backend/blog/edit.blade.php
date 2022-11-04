@@ -56,6 +56,7 @@
                 <tr>
                     <th>標題</th>
                     <th>內容</th>
+                    <th>圖片</th>
                 </tr>
             </thead>
             <tbody>
@@ -64,6 +65,7 @@
                     <td>
                         <textarea name="content" id="hello" cols="30" rows="3" required>"{!!$blog->content!!}"</textarea>
                     </td>
+                    <td><input type="text" name="pic_path" required value="{{ $blog->pic_path }}"></td>
                     <td>
                         <button type="submit" class="create-btn font-bold py-2 px-4 border rounded">確定修改</button>
                     </td>

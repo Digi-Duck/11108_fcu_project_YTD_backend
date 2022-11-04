@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $updated_at
  * @property string $title
  * @property string $content
+ * @property string $pic_path
  */
 class Blog extends Model
 {
@@ -23,5 +24,5 @@ class Blog extends Model
     /**
      * @var array
      */
-    protected $fillable = ['created_at', 'updated_at', 'title', 'content'];
+    protected $fillable = ['created_at', 'updated_at', 'title', 'content', 'pic_path'];
 }

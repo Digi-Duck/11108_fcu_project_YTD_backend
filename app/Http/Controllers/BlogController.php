@@ -25,6 +25,7 @@ class BlogController extends Controller
         $blog = Blog::find($id);
         $blog->title = $request->title;
         $blog->content = $request->content;
+        $blog->pic_path = $request->pic_path;
         $blog->save();
 
         return redirect('/admin/blog');

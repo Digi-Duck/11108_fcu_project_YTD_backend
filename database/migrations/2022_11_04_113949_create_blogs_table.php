@@ -18,7 +18,8 @@ return new class extends Migration
             $table->timestamps();
 
             $table->string('title')->comment('標題');
-            $table->longText('content')->comment('內文');
+            $table->longText('content')->comment('內容');
+            $table->string('pic_path')->comment('圖片路徑');
         });
     }
 

@@ -63,7 +63,7 @@
         </svg>
         <img src="./pic/Rectangle 42.png" alt="flower-pic" class="flower-pic">
         <div class="blog_graphics">
-            <img src="./pic/Rectangle 43.png" alt="photographer-pic" class="middle-photographer-pic">
+            <img src="{{$blog[0]->pic_path}}" alt="photographer-pic" class="middle-photographer-pic">
             <div class="graphics_text">
                 <h2>{!!$blog[0]->title!!}</h2>
                 <p>

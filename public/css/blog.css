@@ -252,7 +252,7 @@ body header .blog_graphics .graphics_text p {
 }
 @media (max-width: 520px) {
   body header .blog_graphics .graphics_text p {
-    line-height: 10px;
+    line-height: 20px;
   }
 }
 body main {
