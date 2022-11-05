@@ -365,12 +365,12 @@
             <img class="QRcode" src="./home_img/QRcode.jpeg" alt="">
             <form action="/reservation/store" method="POST">
                 @csrf
-                <label>&nbsp;NAME　&nbsp;&nbsp; |　<input type="text" name="name"></label>
-                <label>&nbsp;PHONE&nbsp;&nbsp;&nbsp; |　<input type="text" name="phone"></label>
+                <label>&nbsp;NAME　&nbsp;&nbsp; |　<input type="text" name="name" required></label>
+                <label>&nbsp;PHONE&nbsp;&nbsp;&nbsp; |　<input type="text" name="phone" required></label>
                 <label>&nbsp;EMAIL　 |　<input type="text" name=email></label>
                 <label class="message">&nbsp;HOW CAN WE HELP ?
                     <hr>
-                    <textarea style="border:none;" name="message"></textarea>
+                    <textarea style="border:none;" name="message" required></textarea>
                 </label>
                 <p>We’d love to hear from you. Our friendly team is always here to chat.</p>
                 <button type="submit" class="contact_btn_submit">Send Message</button>

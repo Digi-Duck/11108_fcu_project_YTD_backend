@@ -57,7 +57,7 @@
                     <td>{{ $key+1 }}</td>
                     <td>{{ $item->title }}</td>
                     <td>{!! $item->content !!}</td>
-                    <td>{{ $item->pic_path }}</td>
+                    <td><img src=".{{ $item->pic_path }}" alt=""></td>
                     <td>
                         <a href="/admin/blog/edit/{{ $item->id }}"
                             class="edit-btn font-bold py-2 px-4 border rounded">編輯</a>
