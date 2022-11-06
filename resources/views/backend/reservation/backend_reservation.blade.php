@@ -1,47 +1,59 @@
 @extends('layouts.app')
 @section('css')
-<style>
-    table {
-        width: 80%;
-        text-align: center;
-        margin-left: 50%;
-        transform: translate(-50%, 0);
-    }
+    <style>
+        :root::-webkit-scrollbar {
+            display: none;
+        }
 
-    th,
-    td {
-        border: 1px solid black;
-    }
+        main {
+            width: 100%;
+            height: 90vh;
+            background-image: url(../backend_pic/dashboard.jfif);
+            background-size: contain;
+            background-attachment: fixed;
+            padding-top: 10px;
+            overflow-y: scroll;
+            color: white
+        }
 
-    img{
-        width: 200px;
-    }
+        main::-webkit-scrollbar {
+            display: none;
+        }
 
-    .create-btn {
-        color: white;
-        background-color: green;
-        display: inline-block;
-        margin-block: 30px
-    }
+        table {
+            width: 60%;
+            text-align: center;
+            margin: auto;
+            background-color: #fff;
+        }
 
-    .edit-btn {
-        color: white;
-        background-color: skyblue;
-        display: inline-block;
-        margin-block: 30px
-    }
+        thead,tbody{
+            background-color: #000000dd;
+        }
 
-    .delete-btn {
-        color: white;
-        background-color: crimson;
-        display: inline-block;
-        margin-block: 30px
-    }
-</style>
+        th,
+        td {
+            border: 1px solid white;
+        }
+
+        .edit-btn {
+            color: white;
+            background-color: grey;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .delete-btn {
+            color: white;
+            background-color: grey;
+            display: inline-block;
+            margin: 5px;
+        }
+    </style>
 @endsection
 
 @section('main')
-    <table style="border:1px solid black">
+    <table style="border:1px solid black;">
         <thead>
             <tr>
                 <th>編號</th>
@@ -53,18 +65,18 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ($reservation as $key =>$item)
+            @foreach ($reservation as $key => $item)
                 <tr>
-                    <td>{{ $key+1 }}</td>
+                    <td>{{ $key + 1 }}</td>
                     <td>{{ $item->name }}</td>
                     <td>{{ $item->phone }}</td>
                     <td>{{ $item->email }}</td>
                     <td>{{ $item->message }}</td>
                     <td>
                         <a href="/admin/reservation/edit/{{ $item->id }}"
-                            class="edit-btn font-bold py-2 px-4 border rounded">編輯</a>
+                            class="edit-btn font-bold py-1 px-2 border rounded">✒</a>
                         <a href="/admin/reservation/delete/{{ $item->id }}"
-                            class="delete-btn font-bold py-2 px-4 border rounded">刪除</a>
+                            class="delete-btn font-bold py-1 px-2 border rounded">☠</a>
                     </td>
                 </tr>
             @endforeach

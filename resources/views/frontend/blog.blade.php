@@ -32,6 +32,9 @@
                     fill="#898989" fill-opacity="0.65" />
             </svg>
             <nav>
+                @auth
+                <a href="/dashboard" target="_blank" style="position:absolute;right:2%;top:2%;color:white; text-decoration:none">後台➡</a>
+                @endauth
                 <a class="YTDlogo" href="/">YT.D Photography studio</a>
                 <div class="nav_content">
                     <img src="./home_img/nav_pic.png" alt="nav_pic">

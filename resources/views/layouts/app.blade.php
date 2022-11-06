@@ -15,7 +15,7 @@
     </head>
     @yield('css')
     <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
+        <div class="min-h-screen bg-gray-100" style="background: url(./backend_pic/dashboard.jfif);background-size: contain;">
             <!-- Page Heading -->
             {{-- @if (isset($header))
                 <header class="bg-white shadow">

@@ -7,19 +7,19 @@
                 <!-- Navigation Links -->
                 <div class="space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        後台首頁
+                        Home
                     </x-nav-link>
                 </div>
 
                 <div class="space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('reservation')" :active="request()->routeIs('dashboard')">
-                        客戶留言
+                        Customer
                     </x-nav-link>
                 </div>
 
                 <div class="space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('blog')" :active="request()->routeIs('dashboard')">
-                        部落格管理
+                        Blog
                     </x-nav-link>
                 </div>
 

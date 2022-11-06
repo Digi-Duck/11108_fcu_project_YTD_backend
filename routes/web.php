@@ -41,6 +41,6 @@ Route::get('/admin/reservation/delete/{id}', [ReservationController::class,'dele
 Route::get('/admin/blog', [BlogController::class,'blog'])->middleware(['auth', 'verified'])->name('blog');
 Route::get('/admin/blog/edit/{id}', [BlogController::class,'edit'])->middleware(['auth', 'verified']);
 Route::post('/admin/blog/update/{id}', [BlogController::class,'update'])->middleware(['auth', 'verified']);
-Route::get('/admin/blog/delete/{id}', [BlogController::class,'delete'])->middleware(['auth', 'verified']);
+// Route::get('/admin/blog/delete/{id}', [BlogController::class,'delete'])->middleware(['auth', 'verified']);
 
 require __DIR__.'/auth.php';

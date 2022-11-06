@@ -9,39 +9,42 @@
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
     <style>
+        main {
+            width: 100%;
+            height: 90vh;
+            background: radial-gradient(gray, black);
+            padding-top: 50px;
+        }
+
         table {
             width: 80%;
             text-align: center;
-            margin-left: 50%;
-            transform: translate(-50%, 0);
+            margin: auto;
+            background-color: #fff;
+        }
+
+        thead,
+        tbody {
+            background-color: #000000dd;
         }
 
         th,
         td {
-            border: 1px solid black;
+            border: 1px solid white;
         }
 
-        img {
-            width: 200px;
+        th{
+            color: #fff;
+            text-align: center;
+        }
+
+        input{
+            color: #000000dd;
         }
 
         .create-btn {
             color: white;
-            background-color: green;
-            display: inline-block;
-            margin-block: 30px
-        }
-
-        .edit-btn {
-            color: white;
-            background-color: skyblue;
-            display: inline-block;
-            margin-block: 30px
-        }
-
-        .delete-btn {
-            color: white;
-            background-color: crimson;
+            background-color: #06c4c4;
             display: inline-block;
             margin-block: 30px
         }
@@ -55,19 +58,20 @@
             <thead>
                 <tr>
                     <th>標題</th>
-                    <th>內容</th>
+                    <th>內容(50字)</th>
                     <th>圖片</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td><input type="text" name="title" required value="{{ $blog->title }}"></td>
                     <td>
-                        <textarea name="content" id="hello" cols="30" rows="3" required>"{!!$blog->content!!}"</textarea>
+                        <textarea name="content" id="hello" cols="30" rows="3" required>"{!! $blog->content !!}"</textarea>
                     </td>
                     <td><input type="text" name="pic_path" required value="{{ $blog->pic_path }}"></td>
                     <td>
-                        <button type="submit" class="create-btn font-bold py-2 px-4 border rounded">確定修改</button>
+                        <button type="submit" class="create-btn font-bold py-2 px-4 border rounded">儲存    </button>
                     </td>
                 </tr>
             </tbody>
