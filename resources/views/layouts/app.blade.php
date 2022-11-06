@@ -16,8 +16,6 @@
     @yield('css')
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
-            @include('layouts.navigation')
-
             <!-- Page Heading -->
             {{-- @if (isset($header))
                 <header class="bg-white shadow">
@@ -26,6 +24,15 @@
                     </div>
                 </header>
             @endif --}}
+
+            <!-- Logo -->
+            <div class="shrink-0 flex p-2" style="background-color: black">
+                <a href="{{ route('dashboard') }}" style="margin: auto">
+                    <x-application-logo class="block h-10 w-auto fill-current text-gray-600"/>
+                </a>
+            </div>
+
+            @include('layouts.navigation')
 
             <!-- Page Content -->
             <main>
