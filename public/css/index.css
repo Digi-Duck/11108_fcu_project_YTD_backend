@@ -1058,6 +1058,8 @@
   font-size: clamp(12px, 1.417vw, 20px);
   font-weight: 600;
   color: #898989;
+  width: 100%;
+  height: calc(100% - 30px);
 }
 * body main .contact .message textarea:focus {
   outline: none;
