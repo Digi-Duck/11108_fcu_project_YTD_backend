@@ -286,12 +286,12 @@ body main .main_semicircle img {
 }
 @media (max-width: 520px) {
   body main .main_semicircle img {
-    top: 359px;
+    top: 390px;
   }
 }
 body main h2 {
   font-family: Playfair Display;
-  font-size: clamp(30px, 5.21vw, 100px);
+  font-size: clamp(20px, 5.21vw, 100px);
   font-weight: 400;
   color: #000000;
   font-style: italic;
@@ -309,13 +309,13 @@ body main h2 {
 }
 @media (max-width: 520px) {
   body main h2 {
-    top: 350px;
+    top: 380px;
     line-height: 25px;
   }
 }
 @media (max-width: 390px) {
   body main h2 {
-    top: 300px;
+    top: 350px;
     line-height: 25px;
   }
 }

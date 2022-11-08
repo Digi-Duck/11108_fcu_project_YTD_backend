@@ -521,7 +521,7 @@ body main .sub-content .upper-right-portrait {
   filter: grayscale(100%);
 }
 body main .sub-content .upper-right-portrait:hover {
-  filter: grayscale(0%) contrast(150%);
+  filter: grayscale(0%) contrast(100%);
   transform: scale(1.2);
 }
 @media (max-width: 992px) {
@@ -549,7 +549,7 @@ body main .sub-content .upper-left-portrait {
   filter: grayscale(100%);
 }
 body main .sub-content .upper-left-portrait:hover {
-  filter: grayscale(0%) contrast(150%);
+  filter: grayscale(0%) contrast(100%);
   transform: scale(1.2);
 }
 @media (max-width: 992px) {
@@ -610,7 +610,7 @@ body main .sub-content .lower-right-portrait {
   filter: grayscale(100%);
 }
 body main .sub-content .lower-right-portrait:hover {
-  filter: grayscale(0%) contrast(150%);
+  filter: grayscale(0%) contrast(100%);
   transform: scale(1.2);
 }
 @media (max-width: 1600px) {
@@ -643,7 +643,7 @@ body main .sub-content .lower-left-portrait-1 {
   filter: grayscale(100%);
 }
 body main .sub-content .lower-left-portrait-1:hover {
-  filter: grayscale(0%) contrast(150%);
+  filter: grayscale(0%) contrast(100%);
   transform: scale(1.2);
 }
 @media (max-width: 1600px) {
@@ -677,7 +677,7 @@ body main .sub-content .lower-left-portrait-2 {
   filter: grayscale(100%);
 }
 body main .sub-content .lower-left-portrait-2:hover {
-  filter: grayscale(0%) contrast(150%);
+  filter: grayscale(0%) contrast(100%);
   transform: scale(1.2);
 }
 @media (max-width: 1600px) {

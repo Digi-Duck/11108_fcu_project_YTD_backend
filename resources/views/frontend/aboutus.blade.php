@@ -64,7 +64,7 @@
         <div class="about_photographer">
             <img src="./pic/pic 1.png" alt="photographer_picture" class="photographer_picture">
             <h2>Photographer</h2>
-            <h3>蔡昀庭&nbsp;&nbsp; <span> &nbsp; Tsai Yunting</span></h3>
+            <h3>蔡昀廷&nbsp;&nbsp; <span> &nbsp; Tsai Yunting</span></h3>
             <p>Everyone pursues beautiful photos,<br> But I like to make photos have emotional more. <br> tand by
                 wedding company and advertising company. <br> Now I'm a interior design photographer. <br> Like to
                 create different pic. <br> If you want to take a pic by reciprocity, <br> I will very welcome to work
