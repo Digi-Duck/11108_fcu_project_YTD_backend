@@ -35,7 +35,7 @@ const text_pro = document.querySelector('.text_pro')
 const ntd_orgi_pro = document.querySelector('.ntd_orgi_pro')
 const pro_photo = document.querySelector('.pro_photo')
 
-const artist_photo = document.querySelector('.artist_photo') 
+const artist_photo = document.querySelector('.artist_photo')
 const artist_select = document.querySelector('#artist_select')
 const text_artist = document.querySelector('.text_artist')
 const ntd_artist = document.querySelector('.ntd_artist')
@@ -46,16 +46,16 @@ const other_sec = document.querySelector('.other_sec')
 
 function commercial1() {
     mask1.style.height='100%'
-    
+
     mask1.innerHTML =
     `
     <div style = 'height: 100%;display:flex;flex-direction: column;justify-content: center;'>
         <div style = 'font-family:GenRyuMin JP;'>
             <span style = 'font-size:2.083vw;'>商業攝影</span>
         </div>
-        <div 
-        style = 
-        'font-size:1.354vw;
+        <div
+        style =
+        'font-size:clamp(12px,1.354vw,26px);
         font-family:GenRyuMin JP;
         line-height: 5vh;
         display:flex;
@@ -86,7 +86,7 @@ function portraits1() {
         <div style = 'font-family:GenRyuMin JP;'>
             <span style = 'font-size:2.083vw;'>人像攝影</span>
         </div>
-        <div style = 'font-size:1.354vw;font-family:GenRyuMin JP;line-height: 5vh;display:flex;flex-direction: column;align-items: center;justify-content: center;'>
+        <div style = 'font-size:clamp(12px,1.354vw,26px);font-family:GenRyuMin JP;line-height: 5vh;display:flex;flex-direction: column;align-items: center;justify-content: center;'>
             <span><a href="#pro">形象照</a></span>
             <span><a href="#artist">人像寫真</a></span>
             <span><a href="#other">婚紗</a></span>
@@ -109,7 +109,7 @@ function selection1() {
         <div style = 'font-family:GenRyuMin JP;'>
             <span style = 'font-size:2.083vw;'>工作室精選</span>
         </div>
-        <div style = 'font-size:1.354vw;font-family:GenRyuMin JP;line-height: 5vh;display:flex;flex-direction: column;align-items: center;justify-content: center;'>
+        <div style = 'font-size:clamp(12px,1.354vw,26px);font-family:GenRyuMin JP;line-height: 5vh;display:flex;flex-direction: column;align-items: center;justify-content: center;'>
             <span><a href="#id_photo">證件照</a></span>
             <span><a href="#selfieshoot">自助棚拍</a></span>
             <span><a href="#petphoto">寵物照</a></span>
@@ -132,7 +132,7 @@ function activity1() {
         <div style = 'font-family:GenRyuMin JP;'>
             <span style = 'font-size:2.083vw;'>活動紀錄</span>
         </div>
-        <div style = 'font-size:1.354vw;font-family:GenRyuMin JP;line-height: 5vh;display:flex;flex-direction: column;align-items: center;justify-content: center;'>
+        <div style = 'font-size:clamp(12px,1.354vw,26px);font-family:GenRyuMin JP;line-height: 5vh;display:flex;flex-direction: column;align-items: center;justify-content: center;'>
             <span><a href="#other">商業活動</a></span>
             <span><a href="#other">婚禮紀錄</a></span>
         </div>
@@ -166,7 +166,7 @@ function changephoto_id_after() {
     }else if(id_select.value == "2"){
         id_photo1.src =`
         ./id_photo2_after.png
-        `   
+        `
     }
 }
 function changephoto_selfi1() {
@@ -188,7 +188,7 @@ function changephoto_selfi2() {
         ./selfieshoot3.png
         `
     }
-    
+
 }
 
 function change_id_op() {
@@ -203,8 +203,8 @@ function change_id_op() {
             <li>修圖完成後，不滿意可修至滿意</li>
             <li>附一般證件與韓式證件照兩種電子檔</li>
             <li>僅提供單一尺寸電子檔與印刷成品，其他尺寸需加購</li>
-        </ul> 
-        ` 
+        </ul>
+        `
         id_photo1.src =`
         ./id_photo2_after.png
         `
@@ -237,7 +237,7 @@ function change_id_op() {
         NT$ 650
         `
     }
-    
+
 }
 
 function change_selfi_op() {
@@ -254,12 +254,12 @@ function change_selfi_op() {
     `
     selfi1.src =`
     ./selfieshoot3.png
-    `  
+    `
 
     }else if(selfi_select.value == "1"){
     ntd_orgi_selfieshoot.innerHTML = `
     NT$ 1800
-    ` 
+    `
     selfi1.src =`
     ./selfieshoot1.png
     `
@@ -281,7 +281,7 @@ function change_pro_op(){
             <li>專業動作指引與溝通，拍攝時長 1 - 1.5 小時</li>
             <li>妝髮自理；如需妝髮服務可預約洽詢</li>
             <li>服裝自理；建議穿上正裝前來拍攝</li>
-        </ul>  
+        </ul>
         `
     }else if(pro_select.value == "3"){
         pro_photo.src=`
@@ -297,7 +297,7 @@ function change_pro_op(){
             <li>專業動作指引與溝通，拍攝時長 1 - 1.5 小時</li>
             <li>妝髮自理；如需妝髮服務可預約洽詢</li>
             <li>服裝自理；建議穿上正裝前來拍攝</li>
-        </ul>  
+        </ul>
         `
     }else if(pro_select.value == "4"){
         pro_photo.src=`
@@ -314,7 +314,7 @@ function change_pro_op(){
             <li>提供電子檔 2 張</li>
             <li>妝髮自理；如需妝髮服務可預約洽詢</li>
             <li>服裝自理；建議穿上自己喜愛的服裝前來拍攝</li>
-        </ul>  
+        </ul>
         `
     }else if(pro_select.value == "1"){
         pro_photo.src=`
@@ -331,7 +331,7 @@ function change_pro_op(){
             <li>拍攝時長 30 分鐘</li>
             <li>妝髮自理；如需妝髮服務可預約洽詢</li>
             <li>服裝自理；建議穿上正裝前來拍攝</li>
-        </ul> 
+        </ul>
         `
     }
 }
@@ -351,7 +351,7 @@ function change_artist_op() {
             <li>提供調色電子檔 4 張，內含單張人物精修檔</li>
             <li>妝髮、服裝自理；如需妝髮服務可預約洽詢</li>
             <li>當月生日優惠；低收入戶者憑證明可私訊享高級優惠</li>
-        </ul> 
+        </ul>
         `
     }else if(artist_select.value == "3") {
         artist_photo.src=`
@@ -367,7 +367,7 @@ function change_artist_op() {
             <li>精修檔 5 張/組；調色檔全部給予</li>
             <li>妝髮、服裝自理；如需妝髮服務可預約洽詢</li>
             <li>當月生日優惠；低收入戶者憑證明可私訊享高級優惠</li>
-        </ul> 
+        </ul>
         `
     }else if(artist_select.value == "1") {
         artist_photo.src=`
@@ -384,7 +384,7 @@ function change_artist_op() {
             <li>服務時數 2 小時</li>
             <li>精修檔 8 張/組；調色檔全部給予</li>
             <li>妝髮、服裝自理；如需妝髮服務可預約洽詢</li>
-        </ul> 
+        </ul>
         `
     }
 }
