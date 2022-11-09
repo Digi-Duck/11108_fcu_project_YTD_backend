@@ -209,10 +209,10 @@ function change_id_op() {
         ./id_photo2_after.png
         `
         ntd_orgi_idphoto.innerHTML=`
-        NT$ 1000
+        NT$ 2000
         `
         ntd_real_idphoto.innerHTML=`
-        NT$ 800
+        NT$ 1000
         `
 
     }else if(id_select.value == "1"){

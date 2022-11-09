@@ -363,7 +363,7 @@
             <ul>
                 <li>E-mail：yt.d.photo@gmail.com</li>
                 <li>Instagram：yt.d.studio</li>
-                <li>LINE：yt.d.studio</li>
+                <li>LINE：@824lpsxn</li>
             </ul>
             <img class="QRcode" src="./home_img/QRcode.jpeg" alt="">
             <form action="/reservation/store" method="POST">
