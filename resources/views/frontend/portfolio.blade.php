@@ -11,7 +11,7 @@
     <meta name="keyword"
         content="企業形象，空間攝影，建築攝影，房地產拍攝，商業活動，活動紀錄，產品拍攝，棚拍，婚禮攝影，婚紗攝影，工作室，台中，西屯區，空拍，拍照，錄影，攝影，平面，動態，證件照，韓式證件照，微整型證件照，台中證件照，台中形象照，形象照，全景攝影，自助棚拍，婚紗攝影，美妝，化妝，霧眉，採耳，昨日，攝影教學，化妝教學，器材租借，場地租借、CP值最高">
     <title>Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="./web_logo.svg">
+    <link rel="icon" href='./SVG/web_logo.svg'>
     <link rel="stylesheet" href="./css/portfolio.css">
 </head>
 
